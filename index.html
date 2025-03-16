@@ -1,27 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <style>
+      body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #eaeaea;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 0 1.25rem;
+  color: #000;
+  text-decoration: none;
+}
+
+li:hover a {
+  text-decoration: underline;
+}
+
+/* Mobile Toggle */
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 1.5rem;
+  transition: 300ms all ease;
+}
+
+.nav-toggle:hover img {
+  opacity: 0.6;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Mobile */
+@media all and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 250ms height ease-in-out;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  li a {
+    font-size: 1.4rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+    </style>
+    <script>
+      const navToggle = document.querySelector("#navToggle");
+const navClosedIcon = document.querySelector("#navClosed");
+const navOpenIcon = document.querySelector("#navOpen");
+const navIcon = document.querySelectorAll(".navIcon");
+const nav = document.querySelector("nav");
+
+navToggle.addEventListener("click", function () {
+  nav.classList.toggle("open");
+  navIcon.forEach((icon) => {
+    icon.classList.toggle("hidden");
+  });
+});
+
+window.addEventListener(
+  "resize",
+  function () {
+    if (document.body.clientWidth > 720) {
+      nav.classList.remove("open");
+      navIcon.forEach((icon) => {
+        icon.classList.remove("hidden");
+      });
+      navOpenIcon.classList.add("hidden");
+    }
+  },
+  { passive: false }
+);
+    </script>
   </head>
   <body>
-    <div class="hamburger-menu">
-    <div class="bar"></div>	
-    </div>
-    <nav class="mobile-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="has-children">About <span class="icon-arrow"></span>
-            <ul class="children">
-              <li><a href="submenu1.html">Submenu #1</a></li>
-              <li><a href="submenu2.html">Submenu #2</a></li>
-              <li><a href="submenu3.html">Submenu #3</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>				
-        </ul>    
-    </nav>
-  </header>
+    <header>
+      <div class="container">
+        <div id="logo" class="menuUp">
+          <h2>Hiếu</h2>
+          <div class="nav-toggle" id="navToggle">
+            <img id="navClosed" class="navIcon" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg" alt="hamburger menu">
+            <img id="navOpen" class="navIcon hidden" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg" alt="close hamburger">
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Trực tiếp</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
