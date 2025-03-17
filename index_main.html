@@ -6,5 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <!-- Mã Menu -->
+      <nav class="nav">
+    <img src="https://yt3.googleusercontent.com/ytc/AIdro_moeku1wSJ_5JYElsivgwUBW9jYwk2tsk6dgkop4bCQX9KRj77yp1bZwNyZvBy82WKOMA=s160-c-k-c0x00ffffff-no-rj" alt="Girl in a jacket" width="43" height="43">
+    <div class="menu" id="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="toggle" id="toggle">☰</div>
+  </nav>
+  <script>
+    document.getElementById('toggle').addEventListener('click', function() {
+      document.getElementById('menu').classList.toggle('show');
+    });
+  </script>
+
+  <footer class="bg-gray-800 text-white py-4 px-3 mt-16">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
+            <p class="text-xs text-gray-400 md:text-sm">Copyright 2020 &copy; All Rights Reserved</p>
+        </div>
+        <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
+            <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
+                <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                <li class="mx-4"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
   </body>
 </html>
