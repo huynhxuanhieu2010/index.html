@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U  url-tvg="http://lichphatsong.xyz/schedule/epg.xml"
 
 #EXTINF:0 tvg-id="vtv1hd" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/vtv/VTV1.png" group-logo="" group-title="❤️| VTV", VTV1 HD
 #EXTVLCOPT:http-user-agent=cvmedia/1.0.0
