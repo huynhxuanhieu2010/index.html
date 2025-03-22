@@ -7,3 +7,5 @@ https://tv.nknews.org/tvdash/stream.mpd
 
 #EXTINF:0 tvg-id="ext" group-title="🇰🇵| Triều Tiên" type="radio",평양FM방송
 https://listen7.myradio24.com/69366
+#EXTINF:0 tvg-id="ext" group-title="🇰🇵| Triều Tiên" type="radio",조선의 소리 - Russian
+https://listen4.myradio24.com/60315
