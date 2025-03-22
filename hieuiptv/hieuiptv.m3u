@@ -19,6 +19,9 @@ http://p1.cvtv.xyz/vtv5?token=live
 #EXTINF:0 tvg-id="vtv5hdtnb" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/vtv/VTV5-TNB.png" group-logo="" group-title="❤️| VTV", VTV5 Tây Nam Bộ HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57
 https://tv.TruyenHinh.Click/CoBan/vtv5hdtnb/TuyetDoiKhongKinhDoanh
+#EXTINF:0 tvg-id="vtv5hdtn" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/vtv/VTV5-TN.png" group-logo="" group-title="❤️| VTV", VTV5 Tây Nguyên HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57
+https://tv.TruyenHinh.Click/CoBan/vtv5hdtn/TuyetDoiKhongKinhDoanh
 
 #EXTINF:0 tvg-id="ext" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/north-korea/Korean-Central-TV.png" group-logo="" group-title="🇰🇵| Triều Tiên", 조선중앙텔레비죤
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
