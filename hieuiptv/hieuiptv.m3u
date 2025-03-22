@@ -14,6 +14,10 @@ http://p1.cvtv.xyz/vtv3?token=live
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
 https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist_b4200000.m3u8
 
+#EXTINF:0 tvg-id="vtv5hd" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/vtv/VTV5.png" group-logo="" group-title="❤️| VTV", VTV5 HD
+#EXTVLCOPT:http-user-agent=cvmedia/1.1.0
+http://p1.cvtv.xyz/vtv5?token=live
+
 #EXTINF:0 tvg-id="ext" tvg-logo="https://huynhxuanhieu2010.github.io/home/hieuiptv/tv-logo/north-korea/Korean-Central-TV.png" group-logo="" group-title="🇰🇵| Triều Tiên", 조선중앙텔레비죤
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
 https://tv.nknews.org/tvdash/stream.mpd
